@@ -37,6 +37,7 @@ h2 {
   width: 300px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: left;
+  margin-left: 40px;
 }
 
 .book-card p {
@@ -46,4 +47,65 @@ h2 {
 .book-card strong {
   display: inline-block;
   width: 150px;
+}
+
+.deleteButton {
+  position: relative;
+  left: 280px;
+  border: none;
+  cursor: pointer;
+}
+
+#add-book {
+  cursor: pointer;
+  margin-left: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+}
+
+.toggleReadButton {
+  position: relative;
+  right: 20px;
+  padding: 4px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+dialog {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  font-size: 20px;
+}
+
+input {
+  margin-bottom: 20px;
+  padding: 8px;
+  width: 200px;
+  font-size: 20px;
+}
+
+#confirmBtn {
+  margin-right: 10px;
+}
+
+#confirmBtn:hover {
+  background-color: green;
+  color: white;
+}
+
+#cancelBtn:hover {
+  background-color: red;
+  color: white;
+}
+
+.dialog-buttons button {
+  padding: 10px;
+  border-radius: 10px;
 }

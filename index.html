@@ -5,14 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <div class="container">
       <h1>Library</h1>
-      <button>Add a book</button>
-      <div id="books">
-        <h2>Books</h2>
-      </div>
+      <dialog id="book-dialog">
+        <form>
+          <p>
+            <label>
+              Author:
+              <input type="text" name="author" required />
+            </label>
+          </p>
+          <p>
+            <label>
+              Title:
+              <input type="text" name="title" required />
+            </label>
+          </p>
+          <p>
+            <label>
+              Number of Pages:
+              <input type="number" name="numberOfPages" required />
+            </label>
+          </p>
+          <p>
+            <label>
+              Has Read:
+              <input type="checkbox" name="hasRead" />
+            </label>
+          </p>
+          <div class="dialog-buttons">
+            <button id="confirmBtn" value="default" type="submit">
+              Confirm
+            </button>
+            <button id="cancelBtn" value="cancel" formmethod="dialog">
+              Cancel
+            </button>
+          </div>
+        </form>
+      </dialog>
+      <button id="add-book">Add a book</button>
+      <div id="books"></div>
     </div>
     <script src="main.js"></script>
   </body>
